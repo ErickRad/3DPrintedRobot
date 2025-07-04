@@ -6,6 +6,8 @@
 #include "LiquidCrystal_I2C.h"
 #include "Apoio.h"
 #include <Wire.h>
+#include "Remoto.h"
+#include "Voice.h"
 #include <SoftwareSerial.h>
 
 Motor M_Direito(motorDireitoN1, motorDireitoN2, motorDireitoPWM);
@@ -210,9 +212,9 @@ void loop()
            if(modo == 1){
                 Seguir_Linha();
             }else if(modo == 2){
-
+                ControleRemoto();
             }else if(modo == 3){
-
+                ControleVoz();
             }
         }
         delay(10);
