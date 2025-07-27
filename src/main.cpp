@@ -82,44 +82,7 @@ void kali(){
 
 }
 
-void Start(){
-    LCD.print(" Inicializando  ");
-    LCD.setCursor(0,1);
-    LCD.print("    Modulos     ");
-    delay(2000);
-    LCD.clear();
-    LCD.setCursor(0,0);
-    LCD.print("  Configurando  ");
-    LCD.setCursor(0,1);
-    LCD.print("   Interfaces   ");
-    delay(3000);
-    LCD.clear();
-    LCD.setCursor(0,0);
-    LCD.print("   Aguarde ...  ");
-    LCD.setCursor(0,1);
-    LCD.print('[');
-    LCD.setCursor(15,1);
-    LCD.print(']');
 
-    for (int i = 1; i <= 8; i++){
-        delay(50);
-        LCD.setCursor(i,1);
-        LCD.print('=');
-    }
-    delay(600);
-    for (int i = 8; i <= 12; i++){
-        delay(50);
-        LCD.setCursor(i,1);
-        LCD.print('=');
-    }
-    delay(1000);
-    for (int i = 13; i <= 14; i++){
-        delay(50);
-        LCD.setCursor(i,1);
-        LCD.print('=');
-    }
-    delay(300);
-}
 void intro(){
     LCD.clear();
     LCD.setCursor(0,0);
@@ -168,8 +131,6 @@ void setup()
     pinMode(sensorEsquerdo, INPUT);
 
     Encontrar_Enderecos_i2c();
-
-    Start();
     intro();
     
 }    
