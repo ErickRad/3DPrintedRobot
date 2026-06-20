@@ -1,61 +1,44 @@
-🚗 Carrinho Seguidor de Linha com Arduino
+# Black#DPrintedRobot
 
-Bem-vindo ao projeto Carrinho Seguidor de Linha com Arduino.
+This repository serves as an archive of the project, preserving its source code, documentation, and development history. The project consists of an autonomous robot capable of following a path on the ground using infrared sensors and an Arduino board, providing a foundation for educational purposes, prototyping, and robotics studies.
 
-Este projeto tem como objetivo desenvolver um carrinho autônomo capaz de seguir uma linha no chão utilizando sensores infravermelhos e uma placa Arduino. A proposta é criar uma base sólida para aplicações educacionais, prototipagem e participação em competições de robótica.
 
-📌 Visão Geral
+## 📌 Overview
 
-O sistema funciona a partir da leitura contínua de sensores infravermelhos posicionados na parte inferior do carrinho. Esses sensores detectam contraste entre a linha (geralmente preta) e o fundo (geralmente branco).
+The system continuously reads data from infrared sensors mounted underneath the robot. These sensors detect the contrast between the line (typically black) and the surface (typically white).
 
-Com base nessas leituras, o Arduino processa os dados e ajusta dinamicamente a velocidade e direção dos motores, mantendo o carrinho alinhado à trajetória.
+Based on these readings, the Arduino processes the information and dynamically adjusts the speed and direction of the motors, keeping the robot aligned with the track.
 
-🧠 Como Funciona
+## 🧠 How It Works
 
-Sensores IR detectam a posição da linha.
+* IR sensors detect the position of the line.
+* The Arduino interprets the sensor readings.
+* A control algorithm determines the required steering correction.
+* The motor driver adjusts the DC motors accordingly.
+* The robot continuously follows the designated path.
 
-O Arduino interpreta os sinais digitais ou analógicos.
+## 🛠 Hardware Components
 
-Um algoritmo de controle define a correção de rota.
+* Arduino (Uno, Nano, or compatible board)
+* Infrared (IR) sensors
+* DC motors with wheels
+* Motor driver (L298N or equivalent)
+* Robotic chassis
+* Battery pack
+* Wires and jumper cables
 
-A ponte H ajusta os motores DC.
+## ⚙️ Applications
 
-O carrinho mantém o percurso automaticamente.
+* Robotics competitions
+* Embedded systems education
+* Control systems studies (PID)
+* Academic projects
+* Autonomous system prototyping
 
-🛠 Componentes Utilizados
+## 🚀 Project Goals
 
-Arduino (Uno, Nano ou similar)
-
-Sensores infravermelhos (IR)
-
-Motores DC com rodas
-
-Ponte H (L298N ou similar)
-
-Chassi para robótica
-
-Bateria
-
-Cabos e jumpers
-
-⚙️ Aplicações
-
-Competições de robótica
-
-Introdução a sistemas embarcados
-
-Estudos de controle (PID)
-
-Projetos acadêmicos
-
-Prototipagem de sistemas autônomos
-
-🚀 Objetivos do Projeto
-
-Desenvolver lógica de controle eficiente
-
-Melhorar estabilidade e precisão
-
-Otimizar velocidade sem perder estabilidade
-
-Explorar técnicas como controle proporcional ou PID
+* Develop an efficient control algorithm
+* Improve tracking stability and accuracy
+* Optimize speed while maintaining reliability
+* Explore proportional and PID control techniques
+* Build a scalable platform for future robotics projects
