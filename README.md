@@ -1,9 +1,9 @@
-# Black#DPrintedRobot
+# Black3DPrintedRobot
 
 This repository serves as an archive of the project, preserving its source code, documentation, and development history. The project consists of an autonomous robot capable of following a path on the ground using infrared sensors and an Arduino board, providing a foundation for educational purposes, prototyping, and robotics studies.
 
 
-## 📌 Overview
+## Overview
 
 The system continuously reads data from infrared sensors mounted underneath the robot. These sensors detect the contrast between the line (typically black) and the surface (typically white).
 
